@@ -1,0 +1,27 @@
+{
+    "name": "wherd/cache",
+    "description": "Yet another cache wrapper",
+    "type": "library",
+    "require-dev": {
+        "kahlan/kahlan": "*",
+        "friendsofphp/php-cs-fixer": "*",
+        "phpstan/phpstan": "*"
+    },
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Wherd\\Cache\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Sérgio Leal",
+            "email": "ola@wherd.dev"
+        }
+    ],
+    "scripts": {
+        "fmt": "export PHP_CS_FIXER_IGNORE_ENV=1; php-cs-fixer fix",
+        "check": "phpstan analyse --level 8 src",
+        "test": "kahlan"
+    }
+}
