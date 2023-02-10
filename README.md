@@ -1,4 +1,4 @@
-# Database
+# Cache
 
 Yet another cache wrapper.
 
